@@ -1,0 +1,79 @@
+<!-- Sistema de agendamento de doações cestas básicas e produtos de limpeza
+sobre demanda para a igreja que frequento-->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="shortcut icon" href="./src/image/favicon.ico" >
+    <title>Agendamento - Poço de Jacó</title>
+  </head>
+  <body>
+     <a href="index.html"> 
+    <header>
+        
+        <img src=./src/image/igreja.png width="70px" height="70px">
+      <h1>Ponto de Doação</h1>
+    </header></a>
+      <form id="form" action="https://wa.me/5527999960911">
+      <h2>Agendamento</h2>
+
+      <fieldset>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+        
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email" required />
+  
+        <label>Horário para entregar doação:</label>
+        <label>
+          <input type="radio" id="manha" name="horario" value="manhã" required />
+          Manhã
+        </label>
+        <label>
+          <input type="radio" id="tarde" name="horario" value="tarde" required />
+          Tarde
+        </label>
+         <label>
+          <input type="radio" id="noite" name="horario" value="noite" required />
+          Noite
+        </label>
+      </fieldset>
+  
+      <fieldset>
+        <legend>Serviços</legend>
+        <label>
+          <input
+            type="checkbox"
+            id="cesta"
+            name="servico"
+            value="Alimentos/ Cesta Básica"
+          />
+          Alimentos/ Cesta Básica
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            id="limpeza"
+            name="servico"
+            value="Produtos de Limpeza"
+          />
+         Produtos de Limpeza
+        </label>
+       
+      </fieldset>
+
+      <button id="btn" type="submit">Agendar</button>
+    </form>
+
+   <footer>
+        <h3>Entre em contato</h3>
+        <p><a href="agendamento.html">Entre em contato pelo Whatsapp! <img src="src/image/whatsapp.png" width="20px" height="20px"></a></p>
+        <p><a href="https://maps.app.goo.gl/hYE27PUgkiKNj2TQ7"> Endereço: Endereço: R. Vinte, 55 - Vila Nova, Vila Velha - ES, 29105-665</p>
+      </footer>
+    <script src="./src/script.js"></script>
+  </body>
+</html>
